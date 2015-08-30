@@ -53,7 +53,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="xQE-n9-LnS" kind="show" id="Ob1-Jb-cYA"/>
+                                            <segue destination="XNs-1c-ybb" kind="show" id="9wG-0Q-wew"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="RW6-cy-wJr" style="IBUITableViewCellStyleDefault" id="4nM-PX-wZF">
@@ -73,7 +73,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="XNs-1c-ybb" kind="show" id="6x7-zl-sXH"/>
+                                            <segue destination="xQE-n9-LnS" kind="show" id="pES-bf-hje"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -151,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="1934" y="-10"/>
         </scene>
-        <!--Frame Animation-->
+        <!--Transform Animation-->
         <scene sceneID="Q6j-Js-lZZ">
             <objects>
                 <viewController id="xQE-n9-LnS" sceneMemberID="viewController">
@@ -164,16 +164,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Frame Animation" id="Hj3-LS-VG4"/>
+                    <navigationItem key="navigationItem" title="Transform Animation" id="Hj3-LS-VG4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cC6-Xm-aDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2616" y="479"/>
+            <point key="canvasLocation" x="1934" y="951"/>
         </scene>
-        <!--Transform Animation-->
+        <!--Frame Animation-->
         <scene sceneID="bHT-L9-vcF">
             <objects>
-                <viewController id="XNs-1c-ybb" sceneMemberID="viewController">
+                <viewController id="XNs-1c-ybb" customClass="FrameExampleViewController" customModule="UIViewAnimateWithDuration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7wv-D9-Jh3"/>
                         <viewControllerLayoutGuide type="bottom" id="POC-vz-3dZ"/>
@@ -181,13 +181,64 @@
                     <view key="view" contentMode="scaleToFill" id="sSW-sM-hX1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1mZ-lw-gHf">
+                                <rect key="frame" x="242" y="502" width="116" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNn-6a-S1a">
+                                        <rect key="frame" x="43" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Up"/>
+                                        <connections>
+                                            <action selector="moveUp:" destination="XNs-1c-ybb" eventType="touchUpInside" id="N9A-A9-Yee"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1gS-Ch-fey">
+                                        <rect key="frame" x="0.0" y="30" width="116" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFw-0X-sxc">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="Left"/>
+                                                <connections>
+                                                    <action selector="moveLeft:" destination="XNs-1c-ybb" eventType="touchUpInside" id="zDz-pK-TRA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eh-qD-KV2">
+                                                <rect key="frame" x="80" y="0.0" width="36" height="30"/>
+                                                <state key="normal" title="Right"/>
+                                                <connections>
+                                                    <action selector="moveRight:" destination="XNs-1c-ybb" eventType="touchUpInside" id="v3z-Ho-beb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpq-nI-elF">
+                                        <rect key="frame" x="39" y="60" width="39" height="30"/>
+                                        <state key="normal" title="Down"/>
+                                        <connections>
+                                            <action selector="moveDown:" destination="XNs-1c-ybb" eventType="touchUpInside" id="x8N-Cb-fZO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1b-Y0-N1u">
+                                <rect key="frame" x="10" y="100" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1mZ-lw-gHf" firstAttribute="centerX" secondItem="sSW-sM-hX1" secondAttribute="centerX" id="jjA-Ed-KBn"/>
+                            <constraint firstItem="POC-vz-3dZ" firstAttribute="top" secondItem="1mZ-lw-gHf" secondAttribute="bottom" constant="8" symbolic="YES" id="oMV-Kt-cqJ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Transform Animation" id="Pfk-Dy-wcL"/>
+                    <navigationItem key="navigationItem" title="Frame Animation" id="Pfk-Dy-wcL"/>
+                    <connections>
+                        <outlet property="turtleView" destination="T1b-Y0-N1u" id="EcE-a5-SIU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iG8-Kl-Nzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1941" y="971"/>
+            <point key="canvasLocation" x="2647" y="485"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f2h-Ur-hcF">
