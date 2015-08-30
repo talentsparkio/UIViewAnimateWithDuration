@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sz6-Hf-KY1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--UIView AnimateWithDuration Examples -->
@@ -95,7 +96,7 @@
         <!--Alpha Animation-->
         <scene sceneID="lQu-5S-X06">
             <objects>
-                <viewController id="OT6-iW-yHs" sceneMemberID="viewController">
+                <viewController id="OT6-iW-yHs" customClass="AlphaExampleViewController" customModule="UIViewAnimateWithDuration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xnd-ls-ypZ"/>
                         <viewControllerLayoutGuide type="bottom" id="fN5-vY-KXW"/>
@@ -103,9 +104,48 @@
                     <view key="view" contentMode="scaleToFill" id="3hS-10-vCJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="fDG-y5-Y3U">
+                                <rect key="frame" x="205" y="562" width="190" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hST-GI-6X1">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                        <state key="normal" title="Fade In"/>
+                                        <connections>
+                                            <action selector="fadeIn:" destination="OT6-iW-yHs" eventType="touchUpInside" id="vL1-g4-WlE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqf-gB-s4O">
+                                        <rect key="frame" x="130" y="0.0" width="60" height="30"/>
+                                        <state key="normal" title="Fade out"/>
+                                        <connections>
+                                            <action selector="fadeOut:" destination="OT6-iW-yHs" eventType="touchUpInside" id="cbR-Th-g0a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Watch me fade in/out" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W2Y-s1-9Xb">
+                                <rect key="frame" x="20" y="84" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="W2Y-s1-9Xb" secondAttribute="trailing" id="9bx-Nk-UGT"/>
+                            <constraint firstItem="W2Y-s1-9Xb" firstAttribute="leading" secondItem="3hS-10-vCJ" secondAttribute="leadingMargin" id="L4A-WW-tDI"/>
+                            <constraint firstItem="W2Y-s1-9Xb" firstAttribute="centerX" secondItem="3hS-10-vCJ" secondAttribute="centerX" id="Zh9-IB-7SI"/>
+                            <constraint firstItem="W2Y-s1-9Xb" firstAttribute="top" secondItem="xnd-ls-ypZ" secondAttribute="bottom" constant="20" id="b7r-9k-6GL"/>
+                            <constraint firstItem="fN5-vY-KXW" firstAttribute="top" secondItem="fDG-y5-Y3U" secondAttribute="bottom" constant="8" symbolic="YES" id="fYu-eW-PvF"/>
+                            <constraint firstItem="fDG-y5-Y3U" firstAttribute="centerX" secondItem="3hS-10-vCJ" secondAttribute="centerX" id="gW8-M4-tY4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Alpha Animation" id="1Ks-Zm-buC"/>
+                    <connections>
+                        <outlet property="fadeInButton" destination="hST-GI-6X1" id="lQ7-Bs-lF1"/>
+                        <outlet property="fadeOutButton" destination="Tqf-gB-s4O" id="m5Z-Si-mSU"/>
+                        <outlet property="textField" destination="W2Y-s1-9Xb" id="y5M-Rs-CkH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdh-og-fK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

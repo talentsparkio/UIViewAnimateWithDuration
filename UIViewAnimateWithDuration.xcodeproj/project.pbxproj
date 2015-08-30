@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831F4C6E1B92BA3600758BD9 /* AlphaExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F4C6D1B92BA3600758BD9 /* AlphaExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		83BCB1BB1B92AD23007A0E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BCB1BA1B92AD23007A0E23 /* AppDelegate.swift */; };
 		83BCB1C01B92AD23007A0E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BCB1BE1B92AD23007A0E23 /* Main.storyboard */; };
 		83BCB1C21B92AD23007A0E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BCB1C11B92AD23007A0E23 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831F4C6D1B92BA3600758BD9 /* AlphaExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaExampleViewController.swift; sourceTree = "<group>"; };
 		83BCB1B71B92AD23007A0E23 /* UIViewAnimateWithDuration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewAnimateWithDuration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BCB1BA1B92AD23007A0E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BCB1BF1B92AD23007A0E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				83BCB1BA1B92AD23007A0E23 /* AppDelegate.swift */,
+				831F4C6D1B92BA3600758BD9 /* AlphaExampleViewController.swift */,
 				83BCB1BE1B92AD23007A0E23 /* Main.storyboard */,
 				83BCB1C11B92AD23007A0E23 /* Assets.xcassets */,
 				83BCB1C31B92AD23007A0E23 /* LaunchScreen.storyboard */,
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831F4C6E1B92BA3600758BD9 /* AlphaExampleViewController.swift in Sources */,
 				83BCB1BB1B92AD23007A0E23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
