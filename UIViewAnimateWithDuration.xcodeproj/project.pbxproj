@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		831F4C6E1B92BA3600758BD9 /* AlphaExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F4C6D1B92BA3600758BD9 /* AlphaExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		831F4C701B92C00B00758BD9 /* FrameExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F4C6F1B92C00B00758BD9 /* FrameExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		831F4C721B92C2CB00758BD9 /* TransformExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F4C711B92C2CB00758BD9 /* TransformExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		831F4C741B92CBA300758BD9 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F4C731B92CBA300758BD9 /* MyCustomView.swift */; settings = {ASSET_TAGS = (); }; };
 		83BCB1BB1B92AD23007A0E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BCB1BA1B92AD23007A0E23 /* AppDelegate.swift */; };
 		83BCB1C01B92AD23007A0E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BCB1BE1B92AD23007A0E23 /* Main.storyboard */; };
 		83BCB1C21B92AD23007A0E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BCB1C11B92AD23007A0E23 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		831F4C6D1B92BA3600758BD9 /* AlphaExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaExampleViewController.swift; sourceTree = "<group>"; };
 		831F4C6F1B92C00B00758BD9 /* FrameExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameExampleViewController.swift; sourceTree = "<group>"; };
+		831F4C711B92C2CB00758BD9 /* TransformExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformExampleViewController.swift; sourceTree = "<group>"; };
+		831F4C731B92CBA300758BD9 /* MyCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 		83BCB1B71B92AD23007A0E23 /* UIViewAnimateWithDuration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewAnimateWithDuration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BCB1BA1B92AD23007A0E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BCB1BF1B92AD23007A0E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				83BCB1BA1B92AD23007A0E23 /* AppDelegate.swift */,
 				831F4C6D1B92BA3600758BD9 /* AlphaExampleViewController.swift */,
 				831F4C6F1B92C00B00758BD9 /* FrameExampleViewController.swift */,
+				831F4C711B92C2CB00758BD9 /* TransformExampleViewController.swift */,
+				831F4C731B92CBA300758BD9 /* MyCustomView.swift */,
 				83BCB1BE1B92AD23007A0E23 /* Main.storyboard */,
 				83BCB1C11B92AD23007A0E23 /* Assets.xcassets */,
 				83BCB1C31B92AD23007A0E23 /* LaunchScreen.storyboard */,
@@ -140,6 +146,8 @@
 			files = (
 				831F4C701B92C00B00758BD9 /* FrameExampleViewController.swift in Sources */,
 				831F4C6E1B92BA3600758BD9 /* AlphaExampleViewController.swift in Sources */,
+				831F4C741B92CBA300758BD9 /* MyCustomView.swift in Sources */,
+				831F4C721B92C2CB00758BD9 /* TransformExampleViewController.swift in Sources */,
 				83BCB1BB1B92AD23007A0E23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -154,7 +154,7 @@
         <!--Transform Animation-->
         <scene sceneID="Q6j-Js-lZZ">
             <objects>
-                <viewController id="xQE-n9-LnS" sceneMemberID="viewController">
+                <viewController id="xQE-n9-LnS" customClass="TransformExampleViewController" customModule="UIViewAnimateWithDuration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Neq-ZW-JCk"/>
                         <viewControllerLayoutGuide type="bottom" id="o13-Wf-DMN"/>
@@ -162,11 +162,46 @@
                     <view key="view" contentMode="scaleToFill" id="YaV-uS-WI4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="mWs-SR-Ad9" customClass="MyCustomView" customModule="UIViewAnimateWithDuration" customModuleProvider="target">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to dismiss me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfE-7Y-cgd">
+                                        <rect key="frame" x="31" y="89" width="138" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Pq5-sX-peF" appends="YES" id="W89-eD-P4L"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="mWs-SR-Ad9" firstAttribute="centerY" secondItem="YaV-uS-WI4" secondAttribute="centerY" id="17V-vn-Log"/>
+                            <constraint firstItem="mWs-SR-Ad9" firstAttribute="centerX" secondItem="YaV-uS-WI4" secondAttribute="centerX" id="VL4-6i-cpD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Transform Animation" id="Hj3-LS-VG4"/>
+                    <connections>
+                        <outlet property="myCustomView" destination="mWs-SR-Ad9" id="Yzc-H4-nQe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cC6-Xm-aDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Pq5-sX-peF">
+                    <connections>
+                        <action selector="dismissMe:" destination="xQE-n9-LnS" id="u6t-EG-6oy"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1934" y="951"/>
         </scene>
