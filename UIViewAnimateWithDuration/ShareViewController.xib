@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareViewController" customModule="UIViewAnimateWithDuration" customModuleProvider="target">
+            <connections>
+                <outlet property="emailButton" destination="5AF-iX-MFg" id="STs-eH-W3A"/>
+                <outlet property="facebookButton" destination="Eve-MB-9Tu" id="D3L-Ra-teR"/>
+                <outlet property="twitterButton" destination="J4f-Nc-0YV" id="3PY-Ub-K3L"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="JJf-Zs-Lnn">
+                    <rect key="frame" x="140" y="200" width="320" height="200"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="0cT-QV-tQr">
+                    <rect key="frame" x="154.5" y="266.5" width="291" height="67"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AF-iX-MFg">
+                            <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                            <state key="normal" image="email"/>
+                            <connections>
+                                <action selector="shareViaEmail:" destination="-1" eventType="touchUpInside" id="i2x-Il-duQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4f-Nc-0YV">
+                            <rect key="frame" x="112" y="0.0" width="67" height="67"/>
+                            <state key="normal" image="twitter"/>
+                            <connections>
+                                <action selector="shareViaTwitter:" destination="-1" eventType="touchUpInside" id="u3H-CK-2ey"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eve-MB-9Tu">
+                            <rect key="frame" x="224" y="0.0" width="67" height="67"/>
+                            <state key="normal" image="facebook"/>
+                            <connections>
+                                <action selector="shareViaFacebook:" destination="-1" eventType="touchUpInside" id="26c-9X-9fW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0cT-QV-tQr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="bgE-sl-pdm"/>
+                <constraint firstItem="JJf-Zs-Lnn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iGR-St-33a"/>
+                <constraint firstItem="0cT-QV-tQr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="meD-Km-wXW"/>
+                <constraint firstItem="JJf-Zs-Lnn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qy2-6m-268"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="email" width="67" height="67"/>
+        <image name="facebook" width="67" height="67"/>
+        <image name="share" width="320" height="200"/>
+        <image name="twitter" width="67" height="67"/>
+    </resources>
+</document>
