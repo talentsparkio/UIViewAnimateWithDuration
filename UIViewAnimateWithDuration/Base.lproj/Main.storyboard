@@ -351,11 +351,6 @@
         <scene sceneID="zPm-v6-NAX">
             <objects>
                 <viewController id="4ir-oe-vY6" customClass="ShareViewController" customModule="UIViewAnimateWithDuration" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kmY-zB-UJB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="200"/>
                 </viewController>

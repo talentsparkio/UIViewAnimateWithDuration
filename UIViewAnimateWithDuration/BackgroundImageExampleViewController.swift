@@ -16,7 +16,7 @@ class BackgroundImageExampleViewController: UIViewController {
         super.viewDidLoad()
 
         let scale = CGAffineTransformMakeScale(0.25, 0.25)
-        let translate = CGAffineTransformMakeTranslation(0, -300)
+        let translate = CGAffineTransformMakeTranslation(0, 600)
         dialogView.transform = CGAffineTransformConcat(scale, translate)
 
         UIView.animateWithDuration(1.0, animations: {
@@ -28,13 +28,5 @@ class BackgroundImageExampleViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-
-    @IBAction func dismissMe(sender: UITapGestureRecognizer) {
-        UIView.animateWithDuration(0.5, animations: {
-            self.dialogView.alpha = 0
-            }, completion: {finished in
-                self.dialogView.removeFromSuperview()
-        })
     }
 }
