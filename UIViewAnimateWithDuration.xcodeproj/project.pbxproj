@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2031F4F81B9819540046970B /* AutoLayoutExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031F4F71B9819540046970B /* AutoLayoutExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		830043301B93766900BD38CD /* BackgroundImageExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300432F1B93766900BD38CD /* BackgroundImageExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		831F4C6E1B92BA3600758BD9 /* AlphaExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F4C6D1B92BA3600758BD9 /* AlphaExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		831F4C701B92C00B00758BD9 /* FrameExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F4C6F1B92C00B00758BD9 /* FrameExampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2031F4F71B9819540046970B /* AutoLayoutExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutExampleViewController.swift; sourceTree = "<group>"; };
 		8300432F1B93766900BD38CD /* BackgroundImageExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageExampleViewController.swift; sourceTree = "<group>"; };
 		831F4C6D1B92BA3600758BD9 /* AlphaExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaExampleViewController.swift; sourceTree = "<group>"; };
 		831F4C6F1B92C00B00758BD9 /* FrameExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameExampleViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				831F4C6F1B92C00B00758BD9 /* FrameExampleViewController.swift */,
 				831F4C711B92C2CB00758BD9 /* TransformExampleViewController.swift */,
 				8300432F1B93766900BD38CD /* BackgroundImageExampleViewController.swift */,
+				2031F4F71B9819540046970B /* AutoLayoutExampleViewController.swift */,
 				831F4C731B92CBA300758BD9 /* MyCustomView.swift */,
 				83BCB1BE1B92AD23007A0E23 /* Main.storyboard */,
 				837C88AD1B93E091001F8DC5 /* ShareViewController.swift */,
@@ -156,6 +159,7 @@
 			files = (
 				831F4C701B92C00B00758BD9 /* FrameExampleViewController.swift in Sources */,
 				830043301B93766900BD38CD /* BackgroundImageExampleViewController.swift in Sources */,
+				2031F4F81B9819540046970B /* AutoLayoutExampleViewController.swift in Sources */,
 				831F4C6E1B92BA3600758BD9 /* AlphaExampleViewController.swift in Sources */,
 				831F4C741B92CBA300758BD9 /* MyCustomView.swift in Sources */,
 				831F4C721B92C2CB00758BD9 /* TransformExampleViewController.swift in Sources */,
